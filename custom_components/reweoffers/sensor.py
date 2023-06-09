@@ -1,5 +1,6 @@
 import logging
 import aiohttp
+from constants import Constants
 
 from homeassistant.components.sensor import PLATFORM_SCHEMA, SensorEntity, ENTITY_ID_FORMAT
 import homeassistant.helpers.config_validation as cv
@@ -23,7 +24,7 @@ class ReweOfferSensor():
    
     async def get_data(self):
         """ fetch data from the REWE API """
-        base_url = f"https://mobile-api.rewe.de/api/v3/all-offers?marketCode={self._market_code}"
+        base_url = f"{Constants.api_base_url}/all-offers?marketCode={self._market_code}"
 
         async with aiohttp.ClientSession() as session:
             try:
