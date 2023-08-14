@@ -2,7 +2,9 @@ name: Validate with hassfest
 
 on:
   push:
+    - ["master"]
   pull_request:
+    - ["master"]
   release:
   schedule:
     - cron: "0 0 * * *"
