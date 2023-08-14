@@ -1,13 +1,13 @@
 {
     "domain": "reweoffers",
     "name": "reweoffers",
-    "issue_tracker": "https://github.com/miggi92/hacs-rewe-offers/issues",
-    "documentation": "https://github.com/miggi92/hacs-rewe-offers",
-    "requirements":[],
-    "dependencies": [],
-    "iot_class": "cloud_polling",
     "codeowners": [
         "@miggi92"
     ],
+    "dependencies": [],
+    "documentation": "https://github.com/miggi92/hacs-rewe-offers",
+    "iot_class": "cloud_polling",
+    "issue_tracker": "https://github.com/miggi92/hacs-rewe-offers/issues",
+    "requirements":[],    
     "version": "v1.0.0"
 }
